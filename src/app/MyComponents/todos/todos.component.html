@@ -15,10 +15,10 @@
 <app-add-todo (todoAdd)="function_to_Add_todo($event)" ></app-add-todo>
 
 
-<h4 class="container" style="margin-left: 60px; margin-top: 100px;color: rgba(95,0,103,1)"> Here are your todos..</h4>
+<h4 class="container" style="margin-left: 60px; margin-top: 100px;color: rgba(95,0,103,1)"> Here are your tasks..</h4>
 <div class="container">
     <div *ngIf="this.todos.length===0; else elseBlock" >
-        <p>No todos to display..</p>
+        <p>No tasks to display..</p>
     </div>
   <ng-template #elseBlock >
     <div *ngFor="let todo of todos; index as i">
